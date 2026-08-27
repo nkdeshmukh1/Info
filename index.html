@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE HTML>
 <!--
 	Editorial by HTML5 UP
@@ -10,294 +11,840 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<style>
+			/* =========================================
+			   PROJECT DESCRIPTION - COLLAPSED
+			   ========================================= */
+
+			.project-description {
+				position: relative;
+				margin-bottom: 0.5em;
+			}
+
+			.project-summary {
+				margin-bottom: 0.5em;
+			}
+
+			.project-more {
+				display: none;
+			}
+
+			.project-more.show {
+				display: block;
+			}
+
+			.project-tech {
+				font-size: 0.85em;
+				margin-bottom: 0.5em;
+			}
+
+			.more-btn {
+				display: inline-block;
+				font-size: 0.85em;
+				font-weight: 600;
+				cursor: pointer;
+				border-bottom: 0;
+				margin-bottom: 1.5em;
+			}
+
+			.more-btn:hover {
+				text-decoration: underline;
+			}
+		</style>
 	</head>
+
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
 
-							<!-- Header -->
-								<header id="header">
-									<a href="index.html" class="logo">Welcome</a>
-									<ul class="icons">
-										<li><a href="https://www.linkedin.com/in/nikhil-kumar-deshmukh-59b6a0183/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-    									<li><a href="https://github.com/" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-    									<li><a href="https://www.youtube.com/@EAMSimplified/" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
-									</ul>
-								</header>
+					<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Welcome</a>
 
-							<!-- Banner -->
-								<section id="banner">
-									<div class="content">
-										<header>
-											<h1>Hi, I’m Nikhil EAM Techno-Functional Consultant</h1>
-										</header>
-										<p>Result-oriented IT Professional with 5+ years of experience as an Infor / HxGN EAM Techno-Functional Consultant, specializing in implementation, integration, customization, and process automation. Experienced in delivering end-to-end EAM projects, enhancing user operations, and enabling automation across core enterprise asset management functions.</p>
-										<!--<ul class="actions">
-											<li><a href="#" class="button big">Learn More</a></li>
-										</ul>-->
-									</div>
-									<span class="image object">
-								        <img src="./images/image-wm.jpg" alt="Nikhil Kumar Deshmukh" />
-								    </span>
-								</section>
+						<ul class="icons">
+							<li>
+								<a href="https://www.linkedin.com/in/nikhil-kumar-deshmukh-59b6a0183/"
+									class="icon brands fa-linkedin">
+									<span class="label">LinkedIn</span>
+								</a>
+							</li>
 
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Technologies</h2>
-									</header>
-									<div class="features">
-										<article>
-											<span class="icon fa-gem"></span>
-											<div class="content">
-												<h3>Enterprise Platforms</h3>
-												<p>HxGN EAM, Oracle Fusion</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon solid fa-paper-plane"></span>
-											<div class="content">
-												<h3>Integrations & Automation</h3>
-												<p>Databridge Pro(Apache NiFi), Infor ION, Oracle Integration Cloud(OIC)</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon solid fa-rocket"></span>
-											<div class="content">
-												<h3>Databases</h3>
-												<p>Oracle(PLSQL), Microsoft SQL Server(TSQL)</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon solid fa-signal"></span>
-											<div class="content">
-												<h3>Cloud and Business Intelligence</h3>
-												<p>Oracle Cloud, AWS, Azure and Apache Superset, IBM Cognos</p>
-											</div>
-										</article>
-									</div>
-								</section>
+							<li>
+								<a href="https://github.com/"
+									class="icon brands fa-github">
+									<span class="label">GitHub</span>
+								</a>
+							</li>
 
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Highlights</h2>
-									</header>
-									<div class="posts">
-										<article>
-											<a href="#" class="image"><img src="images/My Lab.png" alt="" /></a>
-											<h3>My Tech Playground</h3>
-											<p>I maintain a fully self-hosted enterprise automation lab where HxGN EAM and its Oracle database are hosted locally on my laptop and securely exposed to the internet, enabling controlled remote access and testing.
-												Apache NiFi and Apache Superset are deployed on Oracle Cloud, where NiFi handles secure data exchange with EAM through APIs and Superset connects to the EAM database for real-time visualization and dashboards.
-												This environment is fully integrated and accessible online, enabling practical experimentation with enterprise-level automation, analytics, and workflow solutions.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/Nifi.png" alt="" /></a>
-											<h3>SFTP-to-EAM Meter Reading Integration (NiFi + REST API)</h3>
-											<p>I designed and implemented an end-to-end integration pipeline in Apache NiFi to automate the ingestion of asset meter readings into HxGN EAM. The flow retrieves raw data files from a secure SFTP location, validates and normalizes the content using Groovy scripting and JSONPath extraction, and converts multi-record files into individual meter-reading events. Each event is enriched with required metadata and transformed into a clean, structured JSON payload that aligns with HxGN EAM’s REST API specifications. The system then posts these payloads directly to the EAM API to create corresponding meter-reading records. The solution includes automated file archiving, detailed logging, and error routing for full traceability. This integration eliminated manual data entry, improved data consistency, and demonstrated my ability to build scalable, production-grade data flows using NiFi and RESTful services.</p>
-											
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/CorrAI.png" alt="" /></a>
-											<h3>AI-Based Corrosion Detection & Automated Maintenance | Databridge Pro + Attune EAM</h3>
-											<p>I designed and implemented an end-to-end integration solution combining SFTP, Databridge Pro, AI-based image classification, and Attune EAM to automate the detection of corrosion on pipe flange equipment and initiate corrective maintenance activities. The flow captures equipment inspection images from a secure SFTP location, extracts the required equipment information, performs validation and transformation using Databridge Pro, and sends the images to an AI API for further analysis. The AI model is trained to recognize corrosion on pipe flanges and returns the equipment condition as "Good" or "Corroded", along with a confidence score. The AI response is then used within the integration logic to determine the next action. For equipment identified as corroded, the integration prepares the required information and sends it to Attune EAM through REST APIs to automatically create a Work Order. The generated Work Order is associated with the appropriate equipment, the Corrosion problem code is populated, and the original inspection image is attached to the Work Order as a supporting document. Equipment identified as being in good condition does not trigger a corrective Work Order. This solution demonstrates how AI-based visual inspection can be integrated with EAM processes to automate the journey from equipment inspection and condition assessment to maintenance action, reducing manual intervention and enabling a scalable approach to condition-based maintenance.
-</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/Superset5.png" alt="" /></a>
-											<h3>Superset Analytics Overview — Built on Top of My EAM Data Pipeline</h3>
-											<p>This Superset dashboard is built on top of my HxGN EAM data pipeline and visualizes key insights from the Work Order data processed through my integration. The donut chart shows the distribution of Work Orders across departments such as BS, RS, ARD, FS, and IT, using the dummy WO dataset I generated and loaded into the reporting database. The KPI card displays the average Work Order completion time, calculated from the report and completion dates stored in the system. Together, these visuals provide a clear view of workload distribution and maintenance efficiency within the organization, demonstrating the end-to-end flow from EAM data extraction to analytical reporting via Superset</p>
+							<li>
+								<a href="https://www.youtube.com/@EAMSimplified/"
+									class="icon brands fa-youtube">
+									<span class="label">YouTube</span>
+								</a>
+							</li>
+						</ul>
+					</header>
 
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/DBInt.png" alt="" /></a>
-											<h3>EAM to PostgreSQL Integration Using Apache NiFi(Databridge Pro)</h3>
-											<p>Designed and implemented an enterprise integration solution between HxGN EAM and PostgreSQL using Apache NiFi as the middleware layer. The solution leveraged custom EAM grid-based data extraction to expose business-ready information, which was securely consumed, transformed, and synchronized into a PostgreSQL cloud database through automated ETL pipelines. The architecture enabled centralized reporting, analytics, and future AI/data-driven use cases while minimizing direct dependency on transactional EAM databases. The implementation included REST/API integration, JSON transformation, JDBC-based database connectivity, scheduled data synchronization, and scalable reporting schema design.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/uds3.png" alt="" /></a>
-											<h3>UDS Data Importer Tool</h3>
-											<p>The User-Defined Screen Excel Import Tool is a custom utility in HxGN EAM that allows users to upload data into a UDS screen in bulk using a predefined Excel file. The tool reads each row from the Excel sheet, validates the values, maps them to the corresponding UDS fields, and inserts or updates the data in the UDS tables. For every row processed, it returns a success or error message, making it easy for users to identify and correct issues. This helps eliminate manual entry, speeds up data loading, and ensures accuracy during configuration or mass updates.</p>
 
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/ConfigCompare.png" alt="" /></a>
-											<h3>EAM Compare Studio</h3>
-											<p>A desktop application for comparing, synchronizing, and migrating Enterprise Asset Management (EAM) configuration objects across multiple environments. It helps eliminate manual, error-prone configuration drift between development, test, and production instances by identifying differences, synchronizing changes, and enabling direct migration of configurations from one environment to another through a simple, centralized interface.</p>
+					<!-- Banner -->
+					<section id="banner">
 
-										</article>
-										<!--<article>
-											<a href="https://www.youtube.com/@EAMSimplified" class="image"><img src="images/pic04.jpg" alt="" /></a>
-											<h3>EAM Simplified</h3>
-											<p>This channel is all about HxGN EAM — where you’ll learn both the technical and functional sides of the system, from real-world configurations to behind-the-scenes customizations.</p>
-									
-										</article>-->
-									</div>
-								</section>
+						<div class="content">
+
+							<header>
+								<h1>
+									Hi, I’m Nikhil<br />
+									EAM Techno-Functional Consultant
+								</h1>
+							</header>
+
+							<p>
+								Result-oriented IT Professional with 5+ years of experience as an
+								Infor / HxGN EAM Techno-Functional Consultant, specializing in
+								implementation, integration, customization, and process automation.
+								Experienced in delivering end-to-end EAM projects, enhancing user
+								operations, and enabling automation across core enterprise asset
+								management functions.
+							</p>
 
 						</div>
-					</div>
 
-				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
+						<span class="image object">
+							<img src="./images/image-wm.jpg"
+								alt="Nikhil Kumar Deshmukh" />
+						</span>
 
-							<!-- Search -->
-								<section id="search" class="alt">
-									<!--<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form> -->
-								</section>
-
-							<!-- Menu -->
-								<!--<nav id="menu">
-									<header class="major">
-										<h2>Skills</h2>
-									</header>
-									<ul>
-										<li><a href="index.html">Homepage</a></li>
-										<li><a href="generic.html">Generic</a></li>
-										<li><a href="elements.html">Elements</a></li>
-										<li>
-											<span class="opener">Submenu</span>
-											<ul>
-												<li><a href="#">Lorem Dolor</a></li>
-												<li><a href="#">Ipsum Adipiscing</a></li>
-												<li><a href="#">Tempus Magna</a></li>
-												<li><a href="#">Feugiat Veroeros</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Etiam Dolore</a></li>
-										<li><a href="#">Adipiscing</a></li>
-										<li>
-											<span class="opener">Another Submenu</span>
-											<ul>
-												<li><a href="#">Lorem Dolor</a></li>
-												<li><a href="#">Ipsum Adipiscing</a></li>
-												<li><a href="#">Tempus Magna</a></li>
-												<li><a href="#">Feugiat Veroeros</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Maximus Erat</a></li>
-										<li><a href="#">Sapien Mauris</a></li>
-										<li><a href="#">Amet Lacinia</a></li>
-									</ul>
-								</nav>--><section>
-									<h2>Skills</h2>
-									<ul class="contact">
-										
-										<li class="icon solid fa-tools">
-											<strong>HxGN EAM Functional:</strong><br>
-											Work, Equipment, Material, Purchasing, Administration
-										</li>
-
-										<li class="icon solid fa-cogs">
-											<strong>HxGN EAM Technical:</strong><br>
-											Grid Designer, User Defined Screen, Flex Rules, Webservices, Alerts, KPI, Charts, Inboxes,<br>
-											Import & Export Utilities, Screen Designer, Reports, Queries, Views, Extensible Framework
-										</li>
-
-										<li class="icon solid fa-database">
-											<strong>SQL:</strong><br>
-											T-SQL, PL/SQL, Cognos Reporting
-										</li>
-
-										<li class="icon solid fa-code">
-											<strong>Integrations:</strong><br>
-											Infor ION, DataBridge Pro, XSLT, JSON, Groovy, API & File-based Integrations<br>
-											(SFTP, Genesis DCM, Oracle Fusion, HVAC)
-										</li>
-
-										<li class="icon solid fa-cloud">
-											<strong>Cloud & Platform Experience:</strong><br>
-											Oracle Cloud Infrastructure, Azure Fundamentals, AWS (Basics)
-										</li>
-
-										<li class="icon solid fa-project-diagram">
-											<strong>Tools & Technologies:</strong><br>
-											IBM Cognos, ServiceNow, Infor Mingle, IDM, UAP, Agile Methodology
-										</li>
-
-										<li class="icon solid fa-laptop-code">
-											<strong>Other Platforms:</strong><br>
-											IBM TRIRIGA (Configuration, Forms, Workflows, Security, Reporting)
-										</li>
-									</ul>
-								</section>
+					</section>
 
 
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Other Work</h2>
-									</header>
-									<div class="mini-posts">
-										<article>
-											<a href="https://www.youtube.com/watch?v=zgyB9i8Oc6c" class="image"><img src="images/Guide.gif" alt="" /></a>
-											<p>This smart enhancement introduces auto-guided data entry that highlights the next important field, helping users complete the form correctly — with zero training required.</p>
-										</article>
-										<article>
-											<a href="https://www.youtube.com/watch?v=kKCrlrwnPno" class="image"><img src="images/CustomUDF.gif" alt="" /></a>
-											<p>Display descriptions dynamically on the Purchase Order screen — without using any UDFs!</p>
-										</article>
-										<article>
-											<a href="https://www.youtube.com/watch?v=lhtidzU3GqA" class="image"><img src="images/EMR.gif" alt="" /></a>
-											<p>This customization dynamically displays user-friendly descriptions for System Level, Assembly Level, and Component Level codes in the List View grid</p>
-										</article>
-									</div>
-									<!--<ul class="actions">
-										<li><a href="#" class="button">More</a></li>
-									</ul>-->
-								</section>
+					<!-- Technologies -->
+					<section>
 
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Get in touch</h2>
-									</header>
-				
-									<ul class="contact">
-										<li class="icon solid fa-envelope">nikhildeshmukh772@gmail.com</li>
-										<li class="icon brands fa-linkedin">
-											<a href="https://www.linkedin.com/in/nikhil-kumar-deshmukh-59b6a0183" target="_blank">
-												https://www.linkedin.com/in/nikhil-kumar-deshmukh-59b6a0183
-											</a>
-										</li>
-										<li class="icon solid fa-file-alt">
-											<a href="https://storage.rxresu.me/clp9ftfbv027i9hun8sxqscl7/resumes/nikhil-kumar-deshmukh.pdf" target="_blank">Download Resume Here</a>
-										</li>
-										
-										
-									</ul>
-								</section>
+						<header class="major">
+							<h2>Technologies</h2>
+						</header>
 
-							<!-- Footer -->
-								<footer id="footer">
-									<p class="copyright">&copy; All rights reserved. <a href="https://unsplash.com">Unsplash</a>. <a href="https://html5up.net">HTML5 UP</a>.</p>
-								</footer>
+						<div class="features">
+
+							<article>
+								<span class="icon fa-gem"></span>
+								<div class="content">
+									<h3>Enterprise Platforms</h3>
+									<p>HxGN EAM, Oracle Fusion</p>
+								</div>
+							</article>
+
+							<article>
+								<span class="icon solid fa-paper-plane"></span>
+								<div class="content">
+									<h3>Integrations & Automation</h3>
+									<p>
+										Databridge Pro (Apache NiFi), Infor ION,
+										Oracle Integration Cloud (OIC)
+									</p>
+								</div>
+							</article>
+
+							<article>
+								<span class="icon solid fa-rocket"></span>
+								<div class="content">
+									<h3>Databases</h3>
+									<p>Oracle (PL/SQL), Microsoft SQL Server (T-SQL)</p>
+								</div>
+							</article>
+
+							<article>
+								<span class="icon solid fa-signal"></span>
+								<div class="content">
+									<h3>Cloud & Business Intelligence</h3>
+									<p>
+										Oracle Cloud, AWS, Azure, Apache Superset,
+										IBM Cognos
+									</p>
+								</div>
+							</article>
 
 						</div>
-					</div>
+
+					</section>
+
+
+					<!-- Highlights -->
+					<section>
+
+						<header class="major">
+							<h2>Highlights</h2>
+						</header>
+
+						<div class="posts">
+
+
+							<!-- =========================================
+							     PROJECT 1 - TECH PLAYGROUND
+							     ========================================= -->
+
+							<article>
+
+								<a href="#" class="image">
+									<img src="images/My Lab.png" alt="My Tech Playground" />
+								</a>
+
+								<h3>My Tech Playground</h3>
+
+								<div class="project-description">
+
+									<p class="project-summary">
+										A self-hosted enterprise automation lab combining
+										HxGN EAM, Oracle, Apache NiFi, and Superset to
+										experiment with real-world integrations, automation,
+										and analytics.
+									</p>
+
+									<div class="project-more">
+
+										<p>
+											HxGN EAM and its Oracle database are hosted locally
+											and securely exposed for controlled remote access
+											and testing.
+										</p>
+
+										<p>
+											Apache NiFi and Apache Superset are deployed on
+											Oracle Cloud. NiFi handles secure data exchange
+											with EAM through APIs, while Superset connects
+											to the EAM data pipeline for visualization and
+											dashboards.
+										</p>
+
+										<p>
+											The environment provides a practical platform
+											for experimenting with enterprise integration,
+											automation, analytics, APIs, databases, and
+											EAM workflows.
+										</p>
+
+									</div>
+
+								</div>
+
+								<p class="project-tech">
+									<strong>Tech:</strong>
+									HxGN EAM · Oracle · Apache NiFi · Superset · Oracle Cloud
+								</p>
+
+								<a href="#" class="more-btn" onclick="toggleProject(this); return false;">
+									... More
+								</a>
+
+							</article>
+
+
+							<!-- =========================================
+							     PROJECT 2 - SFTP METER READING
+							     ========================================= -->
+
+							<article>
+
+								<a href="#" class="image">
+									<img src="images/Nifi.png"
+										alt="SFTP to EAM Meter Reading Integration" />
+								</a>
+
+								<h3>SFTP → EAM Meter Reading Automation</h3>
+
+								<div class="project-description">
+
+									<p class="project-summary">
+										Automated ingestion of asset meter readings from
+										SFTP into HxGN EAM using Apache NiFi, Groovy,
+										JSON transformation, and REST APIs.
+									</p>
+
+									<div class="project-more">
+
+										<p>
+											The flow retrieves raw meter-reading files
+											from a secure SFTP location, validates and
+											normalizes the content, and converts
+											multi-record files into individual
+											meter-reading events.
+										</p>
+
+										<p>
+											Each event is enriched with the required
+											metadata and transformed into a structured
+											JSON payload aligned with HxGN EAM REST API
+											requirements.
+										</p>
+
+										<p>
+											The integration posts the payloads directly
+											to EAM, while also providing automated
+											archiving, logging, validation, and error
+											routing for traceability.
+										</p>
+
+										<p>
+											The solution eliminates manual data entry,
+											improves consistency, and provides a scalable
+											approach for automated meter-data processing.
+										</p>
+
+									</div>
+
+								</div>
+
+								<p class="project-tech">
+									<strong>Tech:</strong>
+									Apache NiFi · Databridge Pro · SFTP · Groovy · JSON · REST API · HxGN EAM
+								</p>
+
+								<a href="#" class="more-btn" onclick="toggleProject(this); return false;">
+									... More
+								</a>
+
+							</article>
+
+
+							<!-- =========================================
+							     PROJECT 3 - CORROSION AI
+							     ========================================= -->
+
+							<article>
+
+								<a href="#" class="image">
+									<img src="images/CorrAI.png"
+										alt="AI Corrosion Detection" />
+								</a>
+
+								<h3>AI Corrosion Detection & Automated Maintenance</h3>
+
+								<div class="project-description">
+
+									<p class="project-summary">
+										AI-powered visual inspection that analyzes pipe-flange
+										images and automatically creates corrective EAM
+										Work Orders when corrosion is detected.
+									</p>
+
+									<div class="project-more">
+
+										<p>
+											The solution captures equipment inspection
+											images from SFTP, extracts equipment
+											information, validates the input, and sends
+											the image to an AI classification API.
+										</p>
+
+										<p>
+											The AI model classifies the equipment condition
+											as <strong>Good</strong> or
+											<strong>Corroded</strong> and returns a
+											confidence score.
+										</p>
+
+										<p>
+											The integration logic evaluates the AI result.
+											Equipment identified as corroded is sent to
+											Attune EAM through REST APIs to automatically
+											create a Work Order.
+										</p>
+
+										<p>
+											The generated Work Order is associated with
+											the equipment, the <strong>Corrosion</strong>
+											problem code is populated, and the original
+											inspection image is attached as a supporting
+											document.
+										</p>
+
+										<p>
+											Equipment identified as Good does not trigger
+											a corrective Work Order, demonstrating how
+											AI-based inspection can drive condition-based
+											maintenance decisions.
+										</p>
+
+									</div>
+
+								</div>
+
+								<p class="project-tech">
+									<strong>Tech:</strong>
+									AI Vision · SFTP · Databridge Pro · REST API · Attune EAM
+								</p>
+
+								<a href="#" class="more-btn" onclick="toggleProject(this); return false;">
+									... More
+								</a>
+
+							</article>
+
+
+							<!-- =========================================
+							     PROJECT 4 - SUPERSET
+							     ========================================= -->
+
+							<article>
+
+								<a href="#" class="image">
+									<img src="images/Superset5.png"
+										alt="Superset Analytics" />
+								</a>
+
+								<h3>EAM Analytics with Apache Superset</h3>
+
+								<div class="project-description">
+
+									<p class="project-summary">
+										An analytics dashboard built on top of my EAM data
+										pipeline to visualize Work Order distribution
+										and maintenance performance.
+									</p>
+
+									<div class="project-more">
+
+										<p>
+											The dashboard visualizes Work Order data
+											processed through the EAM integration
+											pipeline and loaded into the reporting
+											database.
+										</p>
+
+										<p>
+											The dashboard includes department-wise Work
+											Order distribution and KPI calculations such
+											as average Work Order completion time.
+										</p>
+
+										<p>
+											This demonstrates the complete journey from
+											EAM data extraction and integration through
+											to analytical reporting and visualization.
+										</p>
+
+									</div>
+
+								</div>
+
+								<p class="project-tech">
+									<strong>Tech:</strong>
+									HxGN EAM · Apache Superset · SQL · Data Pipeline
+								</p>
+
+								<a href="#" class="more-btn" onclick="toggleProject(this); return false;">
+									... More
+								</a>
+
+							</article>
+
+
+							<!-- =========================================
+							     PROJECT 5 - EAM POSTGRESQL
+							     ========================================= -->
+
+							<article>
+
+								<a href="#" class="image">
+									<img src="images/DBInt.png"
+										alt="EAM to PostgreSQL Integration" />
+								</a>
+
+								<h3>EAM → PostgreSQL Data Integration</h3>
+
+								<div class="project-description">
+
+									<p class="project-summary">
+										Enterprise data integration between HxGN EAM
+										and PostgreSQL using Apache NiFi as the
+										middleware and ETL layer.
+									</p>
+
+									<div class="project-more">
+
+										<p>
+											The solution uses custom EAM grid-based
+											data extraction to expose business-ready
+											information for downstream systems.
+										</p>
+
+										<p>
+											Data is securely consumed, transformed,
+											and synchronized into a PostgreSQL cloud
+											database through automated ETL pipelines.
+										</p>
+
+										<p>
+											The architecture supports centralized
+											reporting, analytics, and future AI/data
+											use cases while reducing direct dependency
+											on transactional EAM databases.
+										</p>
+
+										<p>
+											The implementation includes REST/API
+											integration, JSON transformation,
+											JDBC connectivity, scheduled
+											synchronization, and reporting schema
+											design.
+										</p>
+
+									</div>
+
+								</div>
+
+								<p class="project-tech">
+									<strong>Tech:</strong>
+									HxGN EAM · Apache NiFi · Databridge Pro · PostgreSQL · REST · JDBC
+								</p>
+
+								<a href="#" class="more-btn" onclick="toggleProject(this); return false;">
+									... More
+								</a>
+
+							</article>
+
+
+							<!-- =========================================
+							     PROJECT 6 - UDS IMPORTER
+							     ========================================= -->
+
+							<article>
+
+								<a href="#" class="image">
+									<img src="images/uds3.png"
+										alt="UDS Data Importer Tool" />
+								</a>
+
+								<h3>UDS Data Importer Tool</h3>
+
+								<div class="project-description">
+
+									<p class="project-summary">
+										A custom HxGN EAM utility that enables users
+										to bulk upload and validate UDS data directly
+										from Excel.
+									</p>
+
+									<div class="project-more">
+
+										<p>
+											The tool reads each Excel row, validates
+											the supplied values, maps them to the
+											corresponding UDS fields, and inserts
+											or updates the data in the UDS tables.
+										</p>
+
+										<p>
+											Each processed row returns a success or
+											error message, allowing users to quickly
+											identify and correct invalid data.
+										</p>
+
+										<p>
+											The solution reduces manual entry,
+											accelerates bulk configuration changes,
+											and improves data accuracy.
+										</p>
+
+									</div>
+
+								</div>
+
+								<p class="project-tech">
+									<strong>Tech:</strong>
+									HxGN EAM · UDS · Excel · Data Validation · SQL
+								</p>
+
+								<a href="#" class="more-btn" onclick="toggleProject(this); return false;">
+									... More
+								</a>
+
+							</article>
+
+
+							<!-- =========================================
+							     PROJECT 7 - EAM COMPARE STUDIO
+							     ========================================= -->
+
+							<article>
+
+								<a href="#" class="image">
+									<img src="images/ConfigCompare.png"
+										alt="EAM Compare Studio" />
+								</a>
+
+								<h3>EAM Compare Studio</h3>
+
+								<div class="project-description">
+
+									<p class="project-summary">
+										A desktop tool for comparing, synchronizing,
+										and migrating HxGN EAM configuration objects
+										across development, test, and production.
+									</p>
+
+									<div class="project-more">
+
+										<p>
+											The application identifies configuration
+											differences between EAM environments and
+											presents them in a centralized interface.
+										</p>
+
+										<p>
+											Users can compare configurations,
+											synchronize changes, and migrate selected
+											objects between environments.
+										</p>
+
+										<p>
+											The tool helps reduce configuration drift,
+											minimize manual comparison effort, and
+											make environment migration more controlled
+											and repeatable.
+										</p>
+
+									</div>
+
+								</div>
+
+								<p class="project-tech">
+									<strong>Tech:</strong>
+									EAM Configuration · Comparison · Synchronization · Migration
+								</p>
+
+								<a href="#" class="more-btn" onclick="toggleProject(this); return false;">
+									... More
+								</a>
+
+							</article>
+
+
+						</div>
+
+					</section>
+
+				</div>
+			</div>
+
+
+			<!-- Sidebar -->
+			<div id="sidebar">
+
+				<div class="inner">
+
+
+					<!-- Skills -->
+					<section>
+
+						<h2>Skills</h2>
+
+						<ul class="contact">
+
+							<li class="icon solid fa-tools">
+								<strong>HxGN EAM Functional:</strong><br>
+								Work, Equipment, Material, Purchasing, Administration
+							</li>
+
+							<li class="icon solid fa-cogs">
+								<strong>HxGN EAM Technical:</strong><br>
+								Grid Designer, User Defined Screen, Flex Rules,
+								Webservices, Alerts, KPI, Charts, Inboxes,
+								Import & Export Utilities, Screen Designer,
+								Reports, Queries, Views, Extensible Framework
+							</li>
+
+							<li class="icon solid fa-database">
+								<strong>SQL:</strong><br>
+								T-SQL, PL/SQL, Cognos Reporting
+							</li>
+
+							<li class="icon solid fa-code">
+								<strong>Integrations:</strong><br>
+								Infor ION, DataBridge Pro, XSLT, JSON, Groovy,
+								API & File-based Integrations
+								(SFTP, Genesis DCM, Oracle Fusion, HVAC)
+							</li>
+
+							<li class="icon solid fa-cloud">
+								<strong>Cloud & Platform Experience:</strong><br>
+								Oracle Cloud Infrastructure,
+								Azure Fundamentals, AWS (Basics)
+							</li>
+
+							<li class="icon solid fa-project-diagram">
+								<strong>Tools & Technologies:</strong><br>
+								IBM Cognos, ServiceNow, Infor Mingle,
+								IDM, UAP, Agile Methodology
+							</li>
+
+							<li class="icon solid fa-laptop-code">
+								<strong>Other Platforms:</strong><br>
+								IBM TRIRIGA
+								(Configuration, Forms, Workflows,
+								Security, Reporting)
+							</li>
+
+						</ul>
+
+					</section>
+
+
+					<!-- Other Work -->
+					<section>
+
+						<header class="major">
+							<h2>Other Work</h2>
+						</header>
+
+						<div class="mini-posts">
+
+							<article>
+								<a href="https://www.youtube.com/watch?v=zgyB9i8Oc6c"
+									class="image">
+									<img src="images/Guide.gif"
+										alt="Auto Guided Data Entry" />
+								</a>
+
+								<p>
+									This smart enhancement introduces auto-guided
+									data entry that highlights the next important
+									field, helping users complete the form correctly
+									— with zero training required.
+								</p>
+							</article>
+
+
+							<article>
+								<a href="https://www.youtube.com/watch?v=kKCrlrwnPno"
+									class="image">
+									<img src="images/CustomUDF.gif"
+										alt="Dynamic PO Descriptions" />
+								</a>
+
+								<p>
+									Display descriptions dynamically on the
+									Purchase Order screen — without using any UDFs!
+								</p>
+							</article>
+
+
+							<article>
+								<a href="https://www.youtube.com/watch?v=lhtidzU3GqA"
+									class="image">
+									<img src="images/EMR.gif"
+										alt="EAM Code Descriptions" />
+								</a>
+
+								<p>
+									This customization dynamically displays
+									user-friendly descriptions for System Level,
+									Assembly Level, and Component Level codes
+									in the List View grid.
+								</p>
+							</article>
+
+						</div>
+
+					</section>
+
+
+					<!-- Get in touch -->
+					<section>
+
+						<header class="major">
+							<h2>Get in touch</h2>
+						</header>
+
+						<ul class="contact">
+
+							<li class="icon solid fa-envelope">
+								nikhildeshmukh772@gmail.com
+							</li>
+
+							<li class="icon brands fa-linkedin">
+								<a href="https://www.linkedin.com/in/nikhil-kumar-deshmukh-59b6a0183"
+									target="_blank">
+									LinkedIn Profile
+								</a>
+							</li>
+
+							<li class="icon solid fa-file-alt">
+								<a href="https://storage.rxresu.me/clp9ftfbv027i9hun8sxqscl7/resumes/nikhil-kumar-deshmukh.pdf"
+									target="_blank">
+									Download Resume
+								</a>
+							</li>
+
+						</ul>
+
+					</section>
+
+
+					<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">
+							&copy; All rights reserved.
+							<a href="https://unsplash.com">Unsplash</a>.
+							<a href="https://html5up.net">HTML5 UP</a>.
+						</p>
+					</footer>
+
+				</div>
 
 			</div>
 
+		</div>
+
+
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+
+		<!-- =========================================
+		     MORE / LESS FUNCTION
+		     ========================================= -->
+
+		<script>
+
+			function toggleProject(button) {
+
+				const project = button.parentElement;
+				const moreContent = project.querySelector(".project-more");
+
+				if (moreContent.classList.contains("show")) {
+
+					moreContent.classList.remove("show");
+					button.textContent = "... More";
+
+					/* Scroll slightly back to the project */
+					project.scrollIntoView({
+						behavior: "smooth",
+						block: "nearest"
+					});
+
+				} else {
+
+					moreContent.classList.add("show");
+					button.textContent = "... Less";
+
+				}
+
+			}
+
+		</script>
 
 	</body>
-
 </html>
-
-
-
-
-
+```
